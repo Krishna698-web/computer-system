@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="system.css">
+</head>
+<body>
+    <form class="container" name="system">
+        <input name="input" class="monitor">
+        <div class="keyboard">
+            <div>
+                <input type="button" value="Q" name="Q" onclick="textdisp(Q.value)">
+                <input type="button" value="W" name="W" onclick="textdisp(W.value)">
+                <input type="button" value="E" name="E" onclick="textdisp(E.value)">
+                <input type="button" value="R" name="R" onclick="textdisp(R.value)">
+                <input type="button" value="T" name="T" onclick="textdisp(T.value)">
+                <input type="button" value="Y" name="Y" onclick="textdisp(Y.value)">
+                <input type="button" value="U" name="U" onclick="textdisp(U.value)">
+                <input type="button" value="I" name="I" onclick="textdisp(I.value)">
+                <input type="button" value="O" name="O" onclick="textdisp(O.value)">
+                <input type="button" value="P" name="P" onclick="textdisp(P.value)">
+            </div>
+            <div>
+                <input type="button" value="A" name="A" onclick="textdisp(A.value)">
+                <input type="button" value="S" name="S" onclick="textdisp(S.value)">
+                <input type="button" value="D" name="D" onclick="textdisp(D.value)">
+                <input type="button" value="F" name="F" onclick="textdisp(F.value)">
+                <input type="button" value="G" name="G" onclick="textdisp(G.value)">
+                <input type="button" value="H" name="H" onclick="textdisp(H.value)">
+                <input type="button" value="J" name="J" onclick="textdisp(J.value)">
+                <input type="button" value="K" name="K" onclick="textdisp(K.value)">
+                <input type="button" value="L" name="L" onclick="textdisp(L.value)">
+            </div>
+            <div>
+                <input type="button" value="Z" name="Z" onclick="textdisp(Z.value)">
+                <input type="button" value="X" name="X" onclick="textdisp(X.value)">
+                <input type="button" value="C" name="C" onclick="textdisp(C.value)">
+                <input type="button" value="V" name="V" onclick="textdisp(V.value)">
+                <input type="button" value="B" name="B" onclick="textdisp(B.value)">
+                <input type="button" value="N" name="N" onclick="textdisp(N.value)">
+                <input type="button" value="M" name="M" onclick="textdisp(M.value);">
+                <input type="button" value="Clear" name="clear" class="clear" onclick="clearScreen()">
+            </div>
+                <input type="button" name="space" class="spacebar" onclick="spacebtn()">
+        </div>
+    </form>
+    
+<script>
+    function textdisp(result)
+    {
+         system.input.value = system.input.value + result;
+    }
+    function spacebtn()
+    {
+        system.input.value += " ";
+    }
+    function clearScreen()
+    {
+        system.input.value =" ";
+    }
+</script>
+</body>
+</html>  

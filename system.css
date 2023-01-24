@@ -1,0 +1,70 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+body{
+background-color: #a3b1c6;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+.container{
+    width: 920px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 800px;
+    position: absolute;
+}
+.monitor{
+    height: 300px;
+    width: 500px;
+    background: #a3b1c6;
+    border: 10px solid #a3b1c6;
+    border-radius: 20px;
+    position: absolute;
+    top: 5vh;
+    resize: none;
+    box-shadow: 8px 8px 15px rgb(0, 0, 0, .25), -8px -8px 15px rgb(245, 245, 245, .25), 8px 8px 15px rgb(0, 0, 0, .25) inset;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
+.keyboard{
+    height: 350px;
+    width: 850px;
+    box-shadow: 5px 5px 15px rgb(0, 0, 0, .3), -8px -8px 15px rgb(245, 245, 245, .25);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 20px;
+    position: relative;
+    top: 20vh;
+}
+.keyboard input{
+    height: 60px;
+    width: 60px;
+    background: #a3b1c6;
+    box-shadow: 3px 3px 15px rgb(0, 0, 0, .3), -5px -5px 15px rgb(245, 245, 245, .3);
+    border: 5px solid #a3b1c6;
+    font-size: 25px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.keyboard .spacebar{
+    width: 300px;
+}
+.keyboard .clear{
+    width: 100px;
+}
+.keyboard input:focus{
+    box-shadow: 5px 5px 15px rgb(0, 0, 0, .25), -8px -8px 15px rgb(245, 245, 245, .25), 5px 5px 10px rgb(0, 0, 0, .25) inset;
+    color: white;
+}
